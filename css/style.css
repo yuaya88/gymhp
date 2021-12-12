@@ -1,0 +1,332 @@
+*{
+  margin: 0px;
+}
+@font-face {
+  font-family: 'MyFont';
+  src:url('/myfont/UD Digi Kyokasho NP-B')
+}
+.header_block{
+  height:100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: white;
+  color: black;
+  z-index: 6;
+  position: relative;
+}
+.header_nav{
+  display: flex;
+}
+.header_nav_list{
+  display: flex;
+  list-style: none;
+  margin-left: 30px;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition-property: color;
+  font-family: Comic Sans MS;
+  
+}
+a {
+  text-decoration: none;
+  
+}
+.header_nav_list:hover{
+  color: #FF9F2F;
+
+}
+.header_nav_icon{
+  display: flex;
+  list-style: none;
+  margin-left: 30px;
+  color: black;
+}
+.logo{
+  width: 135px;
+  height:auto;
+  
+}
+.instagram{
+  width: 70px;
+  height:auto;
+}
+.line{
+  width: 70px;
+  height:auto;
+}
+
+.first_view{
+  width: 100%;
+  height: 575px;
+  object-fit: cover;
+  position: relative;
+}
+.design_under{
+  width: 1200px;
+  height: 1000px;
+  background-color: rgba(255,255,255,0.2);
+  position: absolute;
+  top: -330px;
+  left: -170px;
+  transform: rotate( -45deg );
+  z-index: 1;
+}
+.design_top{
+  width: 1200px;
+  height: 680px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: -60px;
+  top: -110px;
+  transform: rotate( -45deg );
+  z-index: 2;
+}
+.orange_shortline{
+  width: 240px;
+  height: 30px;
+  background-color: rgba(255, 159, 47, 0.5);
+  position: absolute;
+  left: -50px;
+  top: 160px;
+  transform: rotate(-45deg);
+  z-index: 3;
+
+}
+.orange_longline{
+  width: 1000px;
+  height: 30px;
+  background-color: rgba(255, 159, 47, 0.5);
+  position: absolute;
+  left: 250px;
+  top: 400px;
+  transform: rotate(-45deg);
+  z-index: 4;
+
+}
+.catchphrase_block{
+  display: flex;
+  
+}
+.catchphrase{
+  color: #1E9965;
+  position: absolute;
+  
+  left: 100px;
+  top: 195px;
+  font-family: HGGyoshotai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 64px;
+  z-index: 8;
+}
+.catchphrase_text{
+  color: black;
+  font-family: UD Digi Kyokasho N-R;
+  font-size: 48px;
+  line-height: 56px;
+
+}
+.catchphrase_important{
+  color: #A0800F;
+  font-family: Arisawa-Kaisho;
+  font-size: 64px;
+  line-height: 64px;
+  top: 195px;
+  vertical-align: middle;
+}
+.hi_background{
+  position: absolute;
+  background-color: rgba(255, 159, 47, 0.5);
+  width: 800px;
+  height: 115.52px;
+  left: 80px;
+  top: 523.56px;
+  transform: skewX(-45deg);
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+h1{
+  color: #FFFFFF;
+  position: absolute;
+  transform: skewX(45deg);
+  z-index: 9;
+  font-size: 48px;
+  font-family: UD Digi Kyokasho NP-B;
+}
+.contact_btn{
+  color: #FFFFFF;
+  background-color: #3BEC42;
+  border-radius: 30px;
+  position: fixed;
+  top: 540px;
+  left: 1032px;
+  width: 395px;
+  height: 73px;
+  font-family: UD Digi Kyokasho NP-B;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+}
+.measures_block{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FCFFA680;
+  position: absolute;
+  z-index: 10;
+
+}
+.mesures{
+  font-size: 24px;
+  text-align: center;
+  padding-top: 50px;
+}
+.measures_text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-top: 40px;
+  text-align: left;
+  line-height: 22px;
+}
+.measures_content{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+.measures_content_1::before{
+  background: url(../img/masuku.png);
+  width: 95px;
+  height: 95px;
+  content: "";
+  background-size: cover;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 40px 15px;
+  text-align: left;
+  
+}
+.measures_content_1{
+  font-family: Century;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.measures_content_2::before{
+  background: url(../img/tearai.png);
+  width: 95px;
+  height: 95px;
+  content: "";
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 40px 15px;
+}
+.measures_content_2{
+  font-family: Century;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.measures_content_3::before{
+  background: url(../img/syoudoku.png);
+  width: 95px;
+  height: 95px;
+  content: "";
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 40px 15px;
+}
+.measures_content_3{
+  font-family: Century;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.measures_content_4::before{
+  background: url(../img/kenon.png);
+  width: 95px;
+  height: 95px;
+  content: "";
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 40px 15px 40px 50px;
+}
+.measures_content_4{
+  font-family: Century;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.measures_content_5::before{
+  background: url(../img/kanki.png);
+  width: 95px;
+  height: 95px;
+  content: "";
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 40px 15px 40px 50px;
+}
+.measures_content_5{
+  font-family: Century;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  
+}
+.measures_content_6::before{
+  background: url(../img/kuukisennjyou.png);
+  width: 95px;
+  height: 95px;
+  content: "";
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 40px 15px 40px 50px;
+}
+.measures_content_6{
+  font-family: Century;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
