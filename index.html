@@ -372,7 +372,7 @@
     </div>
     <div class="impressions_box left">
       <div class="impressions_content">
-        <p class="impressions_age">30代女性</p>
+        <p class="impressions_age">30代後半女性</p>
         <h3 class="question">トレーニングを始めたきっかけは？</h3>
         <h4 class="answer second">体重をおとしたいのとお腹と太ももを引き締めたいと思いトレーニングを始めました。</h4>
         <h3 class="question">どのような効果や体の変化がありましたか？</h3>
@@ -388,7 +388,7 @@
     </div>
     <div class="impressions_box">
       <div class="impressions_content">
-        <p class="impressions_age">30代女性</p>
+        <p class="impressions_age">30代前半女性</p>
         <h3 class="question">トレーニングを始めたきっかけは？</h3>
         <h4 class="answer third">30代になり代謝も落ち本気でまずいと感じ、今ならまだ間に合うと思いトレーニングを始めようと思いました。</h4>
         <h3 class="question">どのような効果や体の変化がありましたか？</h3>
@@ -629,21 +629,21 @@
   <div class="contact">
     <h2 id="contact" class="contact_heading">Contact</h2>
     <p class="contact_heading_ja">お問い合わせフォーム</p>
-    <form action="" class="form" name="contact" method="POST">
+    <form action="confirm.php" class="form" name="contact"  method="POST">
       <div class="form_text">
         <p class="form_text_label">
           <span class="form_text_required">必須</span>お問い合わせ内容
         </p>
-        <select name="inquiry" class="inquiry_box">
-          <option value="application">無料カウンセリング、体験申し込み</option>
-          <option value="rental">施設レンタルの問い合わせ</option>
-          <option value="questions">その他質問</option>
+        <select name="content" class="inquiry_box">
+          <option value="無料カウンセリング、体験申し込み">無料カウンセリング、体験申し込み</option>
+          <option value="施設レンタルの問い合わせ">施設レンタルの問い合わせ</option>
+          <option value="その他質問">その他質問</option>
         </select>
       </div>
       <div class="form_text">
         <p class="form_text_label">
           <span class="form_text_required">必須</span>氏名</p>
-          <input type="text" name="name" class="form_text_input" placeholder="例）山田花子">
+          <input type="text" name="name" class="form_text_input" placeholder="例）山田花子" required>
       </div>
       <div class="form_text">
         <p class="form_text_label">
@@ -664,18 +664,18 @@
         <input type="email" name="email" class="form_text_input" placeholder="例）hard.works.pays.off.gym@gmail.com">
       </div>
       <div class="form_text">
-          <label for="contact" class="form_text_label required_heading">その他質問</label>
-          <textarea name="contact" rows="10" placeholder="その他ご質問がございましたらお書きください。" class="question_item"></textarea> 
+          <label for="question" class="form_text_label required_heading">その他質問</label>
+          <textarea name="question" rows="10" placeholder="その他ご質問がございましたらお書きください。" class="question_item"></textarea> 
       </div>
       <input type="submit" value="送信" class="send">
     </form>
   </div>
-  <div class="fooder">
+  <div class="footer">
     <div class="service">
       <a href="privacyporicy.html#privacyporicy" class="privacyporicy">プライバシーポリシー</a>
       <a href="termsofservice.html#termsofservice" class="termsofservice">利用規約</a>
     </div>
-    <img class="fooder_logo" src="img/hwpoG-02.jpg">
+    <img class="footer_logo" src="img/hwpoG-02.jpg">
   </div>
   <div class="companyname_block">
     <small class="campany">&copy;2022 Hard works pays off GYM inc.</small>
