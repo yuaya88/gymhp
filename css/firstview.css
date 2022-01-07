@@ -1,0 +1,89 @@
+
+.firstview_block{
+  position: relative;
+}
+.first_view{
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.hi_background{
+  position: absolute;
+  background-color: rgba(255, 159, 47, 0.5);
+  width: 50%;
+  height: 8vw;
+  left: 11%;
+  top: 16%;
+  transform: skewX(-45deg);
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+h1{
+  color: #FFFFFF;
+  position: absolute;
+  transform: skewX(45deg);
+  z-index: 9;
+  font-size: 3.4vw;
+  font-family: UD Digi Kyokasho NP-B;
+  padding: 10px 10px;
+}
+.contact_btn{
+  color: #FFFFFF;
+  background-color: #3BEC42;
+  border-radius: 30px;
+  position: fixed;
+  top: 600px;
+  right: 200px;
+  width: 395px;
+  height: 73px;
+  font-family: UD Digi Kyokasho NP-B;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+}
+@media screen and (max-width: 768px) {
+  .hi_background {
+    top: 17%;
+    left: 43%;
+  }
+  .contact_btn {
+    font-size: 26px;
+    height: 50px;
+    width: 300px;
+    top: 350px;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact_btn {
+    font-size: 16px;
+    height: 40px;
+    width: 160px;
+    top: 300px;
+    right: 10px;
+  }
+  .hi_background {
+    left: 13%;
+    top: 43%;
+    position: initial;
+    transform:initial;
+    margin: 0 auto;
+    width: 100%;
+  }
+  h1 {
+    transform: initial;
+    display: block;
+    padding: initial;
+    font-size: 16px;
+    background-color: #ff9f2f;
+    padding: 10px 10px;
+  }
+}

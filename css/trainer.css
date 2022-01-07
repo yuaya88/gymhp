@@ -1,0 +1,116 @@
+.trainer{
+  background-color: rgba(193, 255, 215, 0.5);
+  padding-bottom: 50px;
+}
+.trainer_heading{
+  font-family: Comic Sans MS;
+  font-size: 48px;
+  line-height: 67px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 20px;
+}
+.trainer_profile{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+.trainer_img{
+  width: 40%;
+  text-align: center;
+}
+.trainer_img_photo{
+  width: 70%;
+  height: auto;
+  
+}
+.trainer_table{
+  margin-bottom: 20px;
+
+}
+.trainer_profile_text{
+  font-family: Public Sans;
+  font-size: 24px;
+  line-height: 28px;
+  width: 60%;
+  padding-top: 30px;
+}
+.profile_heading{
+padding-top: 30px;
+}
+.profile_text{
+padding-left: 100px;
+}
+.trainer_messege{
+  background-color: white;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 20px;
+
+}
+.trainer_messege_text{
+  font-family: Century;
+  font-size: 24px;
+  line-height: 35px;
+  padding: 20px 20px;
+}
+@media screen and (max-width: 768px)  {
+  .trainer_heading{
+    font-size: 24px;
+    line-height: initial;
+  }
+  .profile_heading{
+    font-size: 16px;
+    line-height: initial;
+  }
+  .profile_text{
+    font-size: 16px;
+    line-height: initial;
+    padding-left: 20px;
+  }
+  .trainer_messege_text{
+    font-size: 16px;
+    line-height: initial;
+  }
+}
+@media screen and (max-width: 500px) {
+  .trainer_profile {
+    display: block;
+  }
+  .trainer_img {
+    width: 100%;
+  }
+  .trainer_img_photo {
+    width: 50%;
+    height: auto;
+  }
+  .trainer_profile_text {
+    width: 100%;
+  }
+  .profile_heading{
+    width:50%;
+    padding-top: 10px;
+  }
+  .profile_text{
+    width: 50%;
+  }
+  .trainer_profile_text,
+  .profile_heading,
+  .profile_text {
+    text-align: center;
+  }
+  .profile_heading {
+    color: black;
+    padding: 4px 0px;
+    display: block;
+    width: 100%
+
+  }
+  .profile_text{
+    background: #f5f6f8;
+    padding: 4px 0px;
+    display: block;
+    width: 100%;
+  }
+}

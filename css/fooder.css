@@ -1,0 +1,50 @@
+.fooder{
+  background-color: #4B64FF;
+}
+.service{
+  display: flex;
+  font-family: Century;
+  justify-content: space-around;
+}
+.privacyporicy{
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  padding-top: 10px;
+  
+  
+}
+.termsofservice{
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  padding-top: 10px;
+
+}
+.fooder_logo{
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  height: auto;
+  
+}
+.companyname_block{
+  background-color: rgba(0, 0, 0, 0.56);
+  text-align: center;
+  padding: 10px 10px;
+}
+.campany{
+  color: white;
+}
+@media screen and (max-width : 630px) {
+.fooder_logo{
+  width: 60px;
+  height: auto;
+  }
+  .privacyporicy{
+    font-size: 14px;
+  }
+  .termsofservice {
+    font-size: 14px;
+  }
+}

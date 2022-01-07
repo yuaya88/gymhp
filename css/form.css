@@ -1,0 +1,155 @@
+.contact{
+  background-color: rgba(233, 205, 255, 0.31);
+  padding: 50px;
+  position: initial;
+}
+.contact_heading{
+  font-family: Comic Sans MS;
+  font-size: 48px;
+  line-height: 35px;
+  text-align: center;
+}
+.contact_heading_ja{
+  font-family: Century;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  padding: 20px;
+}
+.form_text{
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+  justify-content: space-between;
+  
+}
+.inquiry_box{
+  margin-left: 100px;
+  width: 54%;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.form_text_label{
+  font-family: Century;
+  font-size: 22px;
+  line-height: 35px;
+  width: 60%;
+  
+  
+}
+.form_text_required{
+  color: #FF9F2F;
+  margin-right: 50px;
+  width: 20%;
+
+}
+.form_text_input{
+  margin-left: 100px;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.required_heading {
+  margin-left: 100px;
+}
+.question_text{
+  height: 200px;
+  width: 50%;
+}
+.question_item {
+  width: 60%;
+  border-radius: 10px;
+  padding: 10px 20px;
+
+}
+.send {
+  width: 40%;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 36px;
+  background-color: #FF9F2F;
+  color: white;
+  font-family: UD Digi Kyokasho NP-B;
+  padding: 10px 0;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+  .contact {
+    padding: 20px 20px;
+  }
+  .form {
+    width: 100%;
+  }
+.contact_heading {
+  font-size: 30px;
+  }
+.contact_heading_ja {
+  font-size: 24px;
+  }
+.form_text_label {
+  font-size: 20px;
+  }
+.form_text {
+  width: 100%;
+  }
+.form_text_required {
+  margin-right: 20px;
+  }
+.inquiry_box {
+  width: 76%;
+  margin-left: 50px;
+  }
+.form_text_input {
+  width: 70%;
+  margin-left: 50px;
+  }
+.question_text {
+  width: 100%;
+  margin-left: 65px;
+  height: 100px;
+  }
+  .required_heading {
+    margin-left: 50px;
+  }
+  .question_item {
+    width: 100%;
+  }
+}
+@media screen and (max-width : 630px){
+  .contact_heading {
+    font-size: 24px;
+  }
+  .contact_heading_ja {
+    font-size: 18px;
+  }
+  .form_text {
+    display: block;
+  }
+  .form_text_label {
+    font-size: 16px;
+    width: 80%;
+  }
+  .form_text_input {
+    margin-left: 20px;
+  }
+  .question_text {
+    width: 70%;
+  }
+  .form_text_required {
+    margin-right: 5px;
+  }
+  .inquiry_box {
+    margin-left: 20px;
+    width: 87%;
+  }
+  .question_item{
+    width: 80%;
+  }
+  .send {
+    font-size: 24px;
+    height: 50px;
+  }
+}

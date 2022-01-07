@@ -1,0 +1,33 @@
+.privacyporicy{
+padding-bottom: 50px;
+}
+  h2{
+  text-align: center;
+  font-size: 2rem;
+  padding: 50px 0;
+
+}
+h3{
+  font-size: 1rem;
+}
+.privacyporicy_text{
+  margin: 0 auto;
+  font-weight: normal;
+  width: 60%;
+  line-height: 30px;
+}
+.privacyporicy_item{
+  margin: 30px 50px;
+  font-size: 1.5rem;
+  border-bottom: 3px solid gray;
+  display: inline-block;
+}
+h4{
+  font-weight: normal;
+  width: 80%;
+  margin: 0px 50px;
+  line-height: 30px;
+}
+li{
+  margin: 10px 50px;
+}
