@@ -1,0 +1,46 @@
+.form_confirmation {
+  text-align: center;
+}
+.gym_name {
+  font-size: 24px;
+}
+.contact-title {
+  font-size: 20px;
+}
+.form_text_block {
+  background-color: #FCFFA680;
+  width: 30%;
+  margin: 10px auto;
+  border-top:  solid 20px #ff9f2f;
+  border-bottom: solid 20px #ff9f2f;
+}
+.text_content {
+  border-bottom: solid 3px #ff9f2f;
+}
+@media screen and (max-width: 1000px) {
+.form_text_block {
+  width: 50%;
+}
+  
+}
+@media screen and (max-width: 480px) {
+  .gym_name {
+    font-size: 18px;
+  }
+  .form_text_block {
+    width: 80%;
+  }
+  .contact-title {
+    font-size: 16px;
+  }
+  .form_text {
+    font-size: 14px;
+  }
+  .text_content {
+    font-size: 14px;
+  }
+  .text_answer {
+    font-size: 14px;
+  }
+
+}

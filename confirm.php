@@ -1,4 +1,12 @@
 <?php
+session_start();
+//クリックジャッキング対策
+header('X-FRAME-OPTIONS: SAMEORIGIN');
+function h($str) {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+?>
+<?php
 // フォームのボタンが押されたら
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // フォームから送信されたデータを各変数に格納
@@ -75,48 +83,50 @@ EOM;
 
 <head>
     <meta charset="UTF-8">
-    <title>お問い合わせフォーム</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>お問い合わせフォーム確認画面</title>
+    <link rel="stylesheet" href="css/form_confirmation.css">
 </head>
 
-<body>
+<body class="form_confirmation">
     <div>
-        <h1>Hard works pays off GYM</h1>
+        <h1 class="gym_name">Hard works pays off GYM</h1>
     </div>
     <div>
         <form action="confirm.php" method="post">
-            <input type="hidden" name="content" value="<?php echo $content;?>">
+            <input type="hidden" name="content" value="<?php echo $content; ?>">
             <input type="hidden" name="name" value="<?php echo $name; ?>">
             <input type="hidden" name="birth" value="<?php echo $birth; ?>">
             <input type="hidden" name="tel" value="<?php echo $tel; ?>">
             <input type="hidden" name="email" value="<?php echo $email; ?>">
             <input type="hidden" name="question" value="<?php echo $question; ?>">
-            <h1 class="contact-title">お問い合わせ 内容確認</h1>
-            <p>お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ「送信する」ボタンを押して下さい。</p>
-            <div>
+            <h2 class="contact-title">お問い合わせ 内容確認</h2>
+            <p form_text>お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ「送信する」ボタンを押して下さい。</p>
+            <div class="form_text_block">
                 <div>
-                    <label>お問い合わせ内容</label>
-                    <p><?php echo $content; ?></p>
+                    <label class="text_content">お問い合わせ内容</label>
+                    <p class="text_answer"><?php echo $content; ?></p>
                 </div>
                 <div>
-                    <label>お名前</label>
-                    <p><?php echo $name; ?></p>
+                    <label class="text_content">お名前</label>
+                    <p class="text_answer"><?php echo $name; ?></p>
                 </div>
                 <div>
-                    <label>生年月日</label>
-                    <p><?php echo $birth ?></p>
+                    <label class="text_content">生年月日</label>
+                    <p class="text_answer"><?php echo $birth ?></p>
                 </div>
                 <div>
-                    <label>電話番号</label>
-                    <p><?php echo $tel; ?></p>
+                    <label class="text_content">電話番号</label>
+                    <p class="text_answer"><?php echo $tel; ?></p>
                 </div>
                 <div>
-                    <label>メールアドレス</label>
-                    <p><?php echo $email; ?></p>
+                    <label class="text_content">メールアドレス</label>
+                    <p class="text_answer"><?php echo $email; ?></p>
                 </div>
                 <div>
-                    <label>その他質問</label>
-                    <p><?php echo nl2br($question); ?></p>
+                    <label class="text_content">その他質問</label>
+                    <p class="text_answer"><?php echo nl2br($question);?></p>
                 </div>
             </div>
             <input type="button" value="内容を修正する" onclick="history.back(-1)">

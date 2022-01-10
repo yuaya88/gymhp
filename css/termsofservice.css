@@ -19,3 +19,18 @@ h4{
   font-size: 1rem;
   width: 80%;
 }
+.companyname_block {
+  background-color: rgba(0, 0, 0, 0.56);
+  text-align: center;
+  padding: 10px 10px;
+}
+.home_block {
+  text-align: right;
+}
+.home {
+  display: inline-block;
+  margin: 20px 50px;
+}
+small {
+  color: white;
+}

@@ -1,29 +1,26 @@
-
-.firstview_block{
+.firstview_block {
   position: relative;
 }
-.first_view{
+.first_view {
   width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
 }
-.hi_background{
+.hi_background {
   position: absolute;
   background-color: rgba(255, 159, 47, 0.5);
   width: 50%;
   height: 8vw;
   left: 11%;
-  top: 16%;
+  top: 15%;
   transform: skewX(-45deg);
   z-index: 8;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
-h1{
-  color: #FFFFFF;
+h1 {
+  color: #ffffff;
   position: absolute;
   transform: skewX(45deg);
   z-index: 9;
@@ -31,9 +28,9 @@ h1{
   font-family: UD Digi Kyokasho NP-B;
   padding: 10px 10px;
 }
-.contact_btn{
-  color: #FFFFFF;
-  background-color: #3BEC42;
+.contact_btn {
+  color: #ffffff;
+  background-color: #3bec42;
   border-radius: 30px;
   position: fixed;
   top: 600px;
@@ -51,7 +48,7 @@ h1{
 }
 @media screen and (max-width: 768px) {
   .hi_background {
-    top: 17%;
+    top: 13%;
     left: 43%;
   }
   .contact_btn {
@@ -74,7 +71,7 @@ h1{
     left: 13%;
     top: 43%;
     position: initial;
-    transform:initial;
+    transform: initial;
     margin: 0 auto;
     width: 100%;
   }
