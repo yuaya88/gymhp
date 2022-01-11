@@ -46,7 +46,7 @@ a {
 }
 .header_nav_list:hover{
   color: #FF9F2F;
-
+  
 }
 .header_nav_icon{
   display: flex;
@@ -124,7 +124,7 @@ nav{
   background: rgb(231, 245, 141);
   transition: .5s;
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 0;
   
 }
 .header_nav {

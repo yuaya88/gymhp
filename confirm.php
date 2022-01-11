@@ -2,11 +2,7 @@
 session_start();
 //クリックジャッキング対策
 header('X-FRAME-OPTIONS: SAMEORIGIN');
-function h($str) {
-    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-}
-?>
-<?php
+
 // フォームのボタンが押されたら
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // フォームから送信されたデータを各変数に格納
@@ -25,8 +21,6 @@ if (isset($_POST["submit"])) {
     // 日本語をメールで送る場合のおまじない
     mb_language("ja");
     mb_internal_encoding("UTF-8");
-
-    //mb_send_mail("kanda.it.school.trial@gmail.com", "メール送信テスト", "メール本文");
 
     // 件名を変数subjectに格納
     $subject = "［自動送信］お問い合わせ内容の確認";
@@ -126,7 +120,7 @@ EOM;
                 </div>
                 <div>
                     <label class="text_content">その他質問</label>
-                    <p class="text_answer"><?php echo nl2br($question);?></p>
+                    <p class="text_answer"><?php echo nl2br($question); ?></p>
                 </div>
             </div>
             <input type="button" value="内容を修正する" onclick="history.back(-1)">

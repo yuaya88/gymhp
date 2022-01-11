@@ -46,10 +46,10 @@ h1 {
   align-items: center;
   z-index: 12;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .hi_background {
-    top: 13%;
-    left: 43%;
+    top: 10%;
+    left:11%;
   }
   .contact_btn {
     font-size: 26px;
@@ -59,7 +59,7 @@ h1 {
     right: 50px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .contact_btn {
     font-size: 16px;
     height: 40px;
