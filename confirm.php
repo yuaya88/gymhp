@@ -13,6 +13,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $question = $_POST["question"];
 }
+if (isset($_POST["submit"])) {
+    mb_language("ja");
+    mb_internal_encoding("UTF-8");
+
+    // 件名を変数subjectに格納
+    $subject = "お問い合わせがありました";
+    $to = "y-ta1010gym@hardworkspaysoffgym.com";
+    $header = "From: y-ta1010gym@hardworkspaysoffgym.com";
+    $header .= "Return-path: y-ta1010gym@hardworkspaysoffgym.com";
+    $body1 = <<< EOM
+    
+【 お問い合わせ内容 】
+{$content}
+
+【 氏名 】 
+{$name}
+
+【 生年月日 】 
+{$birth}
+
+【 電話番号 】 
+{$tel}
+
+【 メール 】 
+{$email}
+
+【 その他質問 】 
+{$question}
+EOM;
+    mb_send_mail($to, $subject, $body1, $header);
+}
 
 // 送信ボタンが押されたら
 if (isset($_POST["submit"])) {
@@ -69,7 +100,7 @@ EOM;
     mb_send_mail($email, $subject, $body, $header);
 
     // サンクスページに画面遷移させる
-    header("Location: http://localhost/takagym/thanks.php");
+    header("Location: https://hardworkspaysoffgym.com/thanks.php");
     exit;
 }
 ?>
